@@ -1,3 +1,6 @@
+[License](https://github.com/NavjotSinghBajaj/Dog_Breed_Classifier/blob/master/LICENSE.git) for this project is here.
+
+
 [//]: # (Image References)
 
 [image1]: ./images/sample_dog_output.png "Sample Output"
