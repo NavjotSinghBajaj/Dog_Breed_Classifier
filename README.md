@@ -1,7 +1,7 @@
 # Dog_Breed_Classifier
 
 ---
-## 1. Dataset
+##  Dataset
 
 The dataset used here are provided by Udacity and is similar to Stanford Dog Dataset.The dataset is saved under S3 in Amazon Web Service.
 
