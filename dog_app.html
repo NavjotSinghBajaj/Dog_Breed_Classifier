@@ -4,7 +4,7 @@
 
 <title>dog_app</title>
 
-<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=moQF-zMVdpZC7K1H2gDk_Q60x2Wm577dvpcJGZUCr--Yvmh56pH6gm2nD4hCOgLxi_8UUeg0g6Spepk60zm9eIsB0y5HNu2-ERgLmoNnFUPdqFvIR7G1yMJ5DnFajEIAYqAzHLVOtRiAJqAegSUGA20xr7o24CX9UY3P6o_3Xjo" charset="UTF-8"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=tk4t9UNKEELOKIWccms34AnHmh2CUBmJNaIIXc-QGhGbENThpsB9Ro7eSOrPDGk_Ss61XIJS5JjeQqHvshQ4mdY4w2bCLVJbMBfeMxOMwMk48KtWkyJ1DWSHPTD1nJspo3nsaNddqcOu7nB3njMbEp8ak6x_T5IUG1_qbOUon9c" charset="UTF-8"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
 
@@ -14218,8 +14218,13 @@ Test Accuracy: 21% (183/836)
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Answer:</strong> 
- ResNet is a model with weights trained on ImageNet like VGG16. It is used for image classification.</p>
+<p><strong>Answer:</strong></p>
+<p>I have decided to use the resnet101 architecture which is pre-trained on Imagenet dataset, The architecture is 101 layers deep, within just 10 epochs, the model got 84% accuracy. If we train for more epochs, the accuracy can be significantly improved.</p>
+<p>Steps:</p>
+<p>1.Import pre-trained resnet101 model</p>
+<p>2.Change the out_features of fully connected layer to 133 to solve the classification problem</p>
+<p>3.CrossEntropy loss function is chosen as loss function.</p>
+<p>Trained for 10 epochs and got 84% accuracy.</p>
 
 </div>
 </div>
@@ -14508,10 +14513,11 @@ Test Accuracy: 84% (709/836)
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer:</strong> 
 The predictions seem to be very good.
-Three improvements can be:</p>
-<p>The algorithm could be made available in a web application to be more accessible to people
-If a dog and a human can be seen in an image, an additional function could be implemented here to make a prediction for both
-The entire training, validation and test dataset contains only 134 dog breeds. The FCI currently recognizes over 352 dog breeds. If this diversity were represented in the data set, the algorithm would be able to provide an estimate for all these dog breeds.</p>
+The improvements can be:</p>
+<p>1.The algorithm could be made available in a web application to be more accessible to people.</p>
+<p>2.More training data will help in model improvement. If a dog and a human can be seen in an image, an additional function could be implemented here to make a prediction for both. The entire training, validation and test dataset contains only 134 dog breeds. The FCI currently recognizes over 352 dog breeds. If this diversity were represented in the data set, the algorithm would be able to provide an estimate for all these dog breeds.</p>
+<p>3.Hyper parameter tuning will also help in improving performance.</p>
+<p>4.More image augmentation can be tried to improve accuracy.</p>
 
 </div>
 </div>
